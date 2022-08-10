@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\v1\ClientesController;
+use App\Http\Controllers\v1\AlumnosController;
 
 /*
 |--------------------------------------------------------------------------
