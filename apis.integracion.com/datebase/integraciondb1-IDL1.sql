@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-08-2022 a las 05:32:47
+-- Tiempo de generación: 10-08-2022 a las 07:46:52
 -- Versión del servidor: 10.4.19-MariaDB
 -- Versión de PHP: 8.0.6
 
@@ -41,6 +41,16 @@ CREATE TABLE `alumnos` (
   `deleted_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Volcado de datos para la tabla `alumnos`
+--
+
+INSERT INTO `alumnos` (`id`, `tipo_documento`, `numero_documento`, `nombres`, `apellido_paterno`, `apellido_materno`, `direccion`, `ubigeo`, `created_at`, `updated_at`, `deleted_at`) VALUES
+('8838ccb6-186e-11ed-861d-0242ac120002', 'DNI', '72634563', 'Luis Noe', 'Otrera', 'Cuenca', 'Av los andes 225', '131646', NULL, NULL, NULL),
+('ba738e92-186d-11ed-861d-0242ac120002', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+('c4fc8c6a-186d-11ed-861d-0242ac120002', 'DNI', '70686428', 'Juan Grau', 'Lorenzo', 'Mendoza', 'Jr julio 456', '110101', NULL, NULL, NULL),
+('ee7908f5-e53b-48d1-9291-5ca3f347f4f6', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -69,7 +79,8 @@ CREATE TABLE `clientes` (
 
 INSERT INTO `clientes` (`id`, `tipo`, `tipo_documento`, `numero_documento`, `nombres`, `apellido_paterno`, `apellido_materno`, `razon_social`, `direccion`, `ubigeo`, `created_at`, `updated_at`, `deleted_at`) VALUES
 ('864cad6e-c2d2-415d-9a64-23aa6a40ea06', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('dceac700-1850-11ed-861d-0242ac120002', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+('dceac700-1850-11ed-861d-0242ac120002', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+('f8cd2134-186e-11ed-861d-0242ac120002', 'PERSONA', 'DNI', '48787478', 'Luis', 'curo', 'Salvatierra', NULL, 'Jr los alamos 123', '12003', NULL, NULL, NULL);
 
 --
 -- Índices para tablas volcadas
